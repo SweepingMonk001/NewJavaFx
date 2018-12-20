@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>common2</artifactId>
+        <groupId>ldh.common</groupId>
+        <version>1.01-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+	<groupId>ldh.common2</groupId>
+    <artifactId>componentfx</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>ldh.common2</groupId>
+            <artifactId>base2</artifactId>
+            <version>1.01-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>ldh.common2</groupId>
+            <artifactId>web</artifactId>
+            <version>1.01-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>de.jensd</groupId>
+            <artifactId>fontawesomefx</artifactId>
+            <version>8.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>8.40.13</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
