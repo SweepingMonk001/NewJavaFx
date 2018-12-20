@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane styleClass="musicFx" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ldh.musicfx.controller.MusicFxController">
+   <left>
+      <VBox fx:id="musicLeftPane" prefWidth="100.0" BorderPane.alignment="CENTER" styleClass="leftPane">
+         <children>
+            <StackPane fx:id="titlePane" prefHeight="75.0"/>
+            <VBox VBox.vgrow="ALWAYS" styleClass="navPane">
+               <children>
+
+               </children>
+            </VBox>
+            <HBox prefHeight="53.0">
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane>
+         <top>
+            <HBox prefHeight="75.0" styleClass="topPane" onDragDetected="#startMoveWindow" onMouseDragged="#moveWindow" onMouseReleased="#endMoveWindow">
+               <children>
+                  <StackPane styleClass="toggleLeftBtn" prefWidth="65.0" onMouseClicked="#toggleLefPaneAction">
+                     <children>
+                        <Label text="Toggle"/>
+                     </children>
+                  </StackPane>
+                  <Pane HBox.hgrow="ALWAYS"></Pane>
+                  <fx:include source="WindowControl.fxml"/>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="53.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="musicControlPane" prefHeight="100.0" prefWidth="183.0" />
+                  <Region fx:id="lyricPane" prefHeight="200.0" prefWidth="200.0" />
+                  <HBox fx:id="musicInfoPane" prefHeight="100.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </bottom>
+         <right>
+            <StackPane>
+            </StackPane>
+         </right>
+         <center>
+            <StackPane>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

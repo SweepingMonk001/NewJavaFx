@@ -1,0 +1,98 @@
+.root {
+    /*-fx-font-size: 15px;*/
+    -fx-font-family: inherit;
+}
+
+.label, .check-box, .radio-button {
+    -fx-font-size: 15px;
+    -fx-font-family: KaiTi, "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC", Verdana, simsun;
+}
+
+.ldh-window {
+    -fx-border-color: #007d71;
+    -fx-border-radius: 5px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.ldh-window>.top-background {
+    -fx-background-color: #007d71;
+    -fx-fill: #007d71;
+    -fx-background-radius: 5px 5px 0 0;
+    -fx-border-radius: 5px 5px 0 0;
+}
+
+.ldh-window>.bottom-background {
+    -fx-background-color: #e7e7e7;
+    -fx-fill: #e7e7e7;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.ldh-window .login-pane {
+    -fx-background-color: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-vgap: 10;
+    -fx-padding: 0 10 0 10;
+}
+
+.ldh-window>.login-pane .fild-title{
+    -fx-font-size: 14px;
+    -fx-font-weight: 100;
+}
+
+.ldh-window>.login-pane>.title-center {
+    -fx-alignment: center;
+    -fx-font-size: 26px;
+}
+
+.ldh-window>.ldh-window-control {
+    -fx-background-color: transparent;
+}
+
+.glyph-icon{
+    -fx-text-fill: -icons-color;
+    -fx-fill: -icons-color;
+    -glyph-size: 26px;
+}
+
+.ldh-window>.ldh-window-control>.button {
+    -fx-background-color: transparent;
+    -fx-content-display: graphic-only;
+}
+
+.ldh-window>.ldh-window-control>.button:hover {
+    -fx-background-color: grey;
+}
+
+.ldh-window .window-close-icon {
+    -glyph-name: "CLOSE";
+    -icons-color: white;
+    -glyph-size: 22px;
+    -fx-fill: white;
+}
+
+.ldh-window>.login-pane .text-field {
+    -fx-pref-height: 30px;
+    -fx-min-height: 30px;
+}
+
+.ldh-window>.login-pane .button {
+    -fx-pref-height: 30px;
+    -fx-min-height: 30px;
+}
+
+.ldh-window>.login-pane>.separator {
+    -fx-padding: 2px 0px 8px 0px;
+}
+
+/*.ldh-window .login-pane {*/
+    /*-fx-border-radius: 4;*/
+    /*-fx-background-color: 4;*/
+/*}*/
+
+.content-container {
+    -fx-background-color: transparent;
+}

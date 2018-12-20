@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.StatusBar?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import ldh.fx.component.LNavPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600" minWidth="800" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="page.HomeController">
+    <top>
+        <HBox>
+            <Label text="demo"/>
+            <Button fx:id="tonggle" onAction="#tongleLeftPane" text="tonggle" styleClass="tonggle"/>
+        </HBox>
+    </top>
+    <bottom>
+        <HBox>
+            <Label text="asdfafaf"/>
+        </HBox>
+    </bottom>
+    <left>
+        <!--<ScrollPane  styleClass="leftPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefWidth="220" vbarPolicy="NEVER" >-->
+            <!--<content>-->
+                <LNavPane fx:id="leftPane" styleClass="leftBackPane">
+                    <content>
+                        <VBox fx:id="bigLeftPane"  mouseTransparent="false" >
+                            <children>
+                                <Button text="John Doe Frontend Developer" styleClass="nav-title">
+                                    <clip>
+                                        <Circle layoutX="30" layoutY="40" radius="20"></Circle>
+                                    </clip>
+                                </Button>
+                                <Button text="Dashboard" styleClass="leftItem" onAction="#showDashboard">
+                                    <graphic><FontAwesomeIconView styleClass="dashboard-graphic"/></graphic></Button>
+                                <TitledPane text="UI Elements" styleClass="leftItem" expanded="false">
+                                    <graphic>
+                                        <MaterialDesignIconView styleClass="ui-graphic"/>
+                                    </graphic>
+                                    <content>
+                                        <VBox>
+                                            <Button text="Bootstrap Elements" onAction="#showDashboard">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic>
+                                            </Button>
+                                            <Button text="Font Icons"><graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="Cards"><graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="Widgets"><graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                        </VBox>
+                                    </content>
+                                </TitledPane >
+                                <Button text="Charts" styleClass="leftItem" userData="chart1">
+                                    <graphic><FontAwesomeIconView styleClass="chart-graphic"/></graphic></Button>
+
+                                <TitledPane text="Forms" styleClass="leftItem" expanded="false">
+                                    <graphic>
+                                        <FontAwesomeIconView styleClass="pencil-graphic"/>
+                                    </graphic>
+                                    <content>
+                                        <VBox>
+                                            <Button text="Form Components" userData="form1">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="Custom Components" userData="form2">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="Form Samples">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="Form Notifications">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                        </VBox>
+                                    </content>
+                                </TitledPane >
+
+                                <TitledPane text="Table" styleClass="leftItem" expanded="false">
+                                    <graphic>
+                                        <FontAwesomeIconView styleClass="table-graphic"/>
+                                    </graphic>
+                                    <content>
+                                        <VBox>
+                                            <Button text="Basic Tables" userData="chart1">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="Data Tables">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                        </VBox>
+                                    </content>
+                                </TitledPane >
+
+                                <TitledPane text="Pages" styleClass="leftItem" expanded="false">
+                                    <graphic>
+                                        <FontAwesomeIconView styleClass="note-graphic"/>
+                                    </graphic>
+                                    <content>
+                                        <VBox>
+                                            <Button text="Blank Page" userData="chart1">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="Login Page">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="Lockscreen Page" userData="chart1">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="User Page">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="Invoice Page" userData="chart1">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="Calendar Page">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                        </VBox>
+                                    </content>
+                                </TitledPane >
+
+                                <TitledPane text="Multilevel Menu" styleClass="leftItem" expanded="false">
+                                    <graphic>
+                                        <MaterialDesignIconView styleClass="menu-graphic"/>
+                                    </graphic>
+                                    <content>
+                                        <VBox>
+                                            <Button text="Level One" userData="chart1">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                            <Button text="Level Two">
+                                                <graphic><FontAwesomeIconView styleClass="circle-graphic"/></graphic></Button>
+                                        </VBox>
+                                    </content>
+                                </TitledPane >
+                            </children>
+                        </VBox>
+                    </content>
+                </LNavPane>
+            <!--</content>-->
+        <!--</ScrollPane>-->
+    </left>
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true" style="-fx-background-color: white">
+            <StackPane fx:id="contentPane">
+                <children>
+                    <VBox styleClass="content-box">
+                        <children>
+                            <Label text="adfasdfas"/>
+                            <Label text="adfasdfas"/>
+                            <Label text="adfasdfas"/>
+                            <Label text="adfasdfas"/>
+                            <!--<WebView fx:id="webView"></WebView>-->
+                        </children>
+                    </VBox>
+                </children>
+            </StackPane>
+        </ScrollPane>
+    </center>
+
+</BorderPane>

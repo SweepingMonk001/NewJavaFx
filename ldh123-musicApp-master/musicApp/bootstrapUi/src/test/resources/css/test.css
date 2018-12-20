@@ -1,0 +1,39 @@
+.triangle {
+    -fx-skin: 'button.AlternativeTriangleButtonSkin';
+    -fx-animation-duration: '2s';
+    -fx-triangle-fill: orange;
+    -fx-triangle-stroke: black;
+}
+
+.triangle Path {
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+    /*-fx-stroke-width: 10px;*/
+    -fx-border-radius: 5px;
+    -fx-border-width: 6px;
+}
+
+.triangle:armed {
+    -fx-triangle-fill: red;
+}
+
+.triangle:hover {
+    -fx-stroke: red;
+}
+
+.tonggle {
+    -fx-graphic: url("/image/bugIcon.png");
+}
+
+.pencil-graphic{
+    -glyph-name: "PENCIL_SQUARE_ALT";
+    -icons-color: white;
+    -glyph-size: 18px;
+    -fx-fill: white;
+}
+
+.content-box {
+    -fx-background-image: url("/image/test.gif");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: stretch;
+}

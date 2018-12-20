@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import ldh.musicfx.ui.PopupButtonPane?>
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <StackPane fx:id="headPane"></StackPane>
+       <ScrollPane fx:id="navContentPane" prefWidth="100.0" VBox.vgrow="ALWAYS" vbarPolicy="NEVER" hbarPolicy="NEVER" styleClass="noborder">
+        <content>
+
+        </content>
+      </ScrollPane>
+   </children>
+</fx:root>

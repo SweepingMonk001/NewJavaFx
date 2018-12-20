@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.effect.DropShadow?>
+<fx:root type="javafx.scene.layout.AnchorPane" xmlns:fx="http://javafx.com/fxml" prefHeight="380.0" prefWidth="400.0" styleClass="ldh-window" stylesheets="@/css/page/login.css">
+    <children>
+        <Region fx:id="topRectangle" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" styleClass="top-background"/>
+        <Region fx:id="buttomRectangle" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" styleClass="bottom-background"/>
+        <HBox AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" styleClass="ldh-window-control">
+            <children>
+                <Pane HBox.hgrow="ALWAYS"></Pane>
+                <Button text="close" onAction="#closeBtn">
+                    <graphic><FontAwesomeIconView styleClass="window-close-icon"/></graphic>
+                </Button>
+            </children>
+        </HBox>
+        <GridPane fx:id="loginPane" styleClass="login-pane" prefWidth="350" prefHeight="300" alignment="CENTER" >
+            <children>
+                <Label text="Sign in" styleClass="fild-title, title-center" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <Separator GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <Label text="USERNAME" styleClass="fild-title" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="emailField" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+
+                <Label text="PASSWORD" styleClass="fild-title" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <PasswordField fx:id="passwordField" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+
+                <HBox spacing="20" GridPane.rowIndex="6" GridPane.columnIndex="0">
+                    <children>
+                        <CheckBox>记住密码</CheckBox>
+                        <Label text="Forgot Password ?" styleClass="form-error-label"/>
+                    </children>
+                </HBox>
+                <Button text="Sign in" styleClass="btn, btn-primary" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+            </children>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES"/>
+            </columnConstraints>
+        </GridPane >
+    </children>
+    <effect>
+        <DropShadow/>
+    </effect>
+</fx:root>
